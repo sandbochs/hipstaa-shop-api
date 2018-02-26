@@ -2,7 +2,7 @@
 import express from 'express'
 import { port } from 'config'
 
-import { v1 } from 'routers/v1'
+import v1 from 'routers/v1'
 
 const app = express()
 
