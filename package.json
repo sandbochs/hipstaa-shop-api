@@ -15,8 +15,11 @@
     "start": "babel-node src/server",
     "premigrate": "pg-assert-schema -d postgres://postgres@localhost/hipstaa public",
     "migrate": "babel-node ./node_modules/.bin/db-migrate",
-    "db:create": "./node_modules/.bin/db-migrate db:create hipstaa --env dev-create",
-    "db:seed": "babel-node ./bin/seed.js"
+    "migrate-test": "babel-node ./node_modules/.bin/db-migrate --env test",
+    "db:create": "./node_modules/.bin/db-migrate db:create hipstaa --env create",
+    "db:create-test": "./node_modules/.bin/db-migrate db:create test_hipstaa --env create",
+    "db:seed": "babel-node ./bin/seed.js",
+    "db:seed-test": "babel-node ./test-util/seed-test.js"
   },
   "repository": {
     "type": "git",

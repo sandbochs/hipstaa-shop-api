@@ -1,13 +1,19 @@
 {
+  "create": {
+    "driver": "pg",
+    "user": "postgres",
+    "host": "localhost"
+  },
   "dev": {
     "driver": "pg",
     "user": "postgres",
     "host": "localhost",
     "database": "hipstaa"
   },
-  "dev-create": {
+  "test": {
     "driver": "pg",
     "user": "postgres",
-    "host": "localhost"
+    "host": "localhost",
+    "database": "test_hipstaa"
   }
 }
