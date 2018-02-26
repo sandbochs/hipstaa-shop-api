@@ -23,6 +23,7 @@
       2,
       "always"
     ],
+    "import/first": 0,
     "flowtype/require-valid-file-annotation": [
       2,
       "always"

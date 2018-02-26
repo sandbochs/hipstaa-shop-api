@@ -22,5 +22,5 @@ const connection = {
 const pool = new Pool(connection)
 
 export default {
-  query: (sql: string, params: any, callback: function) => pool.query(sql, params, callback),
+  query: (sql: string, params: any, callback: () => mixed) => pool.query(sql, params, callback),
 }

@@ -3,6 +3,7 @@ import db from 'lib/db'
 import sqls from './sqls'
 
 import type { Product } from 'types'
+
 type Params = {
   id: number
 }
