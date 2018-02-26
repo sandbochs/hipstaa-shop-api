@@ -44,6 +44,7 @@
     "db-migrate": "^0.10.5",
     "db-migrate-pg": "^0.3.1",
     "express": "^4.16.2",
+    "express-promise-router": "^3.0.1",
     "pg": "^7.4.1",
     "pg-assert-schema": "^2.0.1"
   }

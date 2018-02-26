@@ -2,9 +2,12 @@
 import { Router } from 'express'
 import type { NextFunction } from 'express' // eslint-disable-line
 
-const router = new Router()
+import { getProducts } from 'stores/products/get-products'
+
+const router = Router()
 router.get('/', async (req: any, res: any, next: NextFuntion): Promise<void> => {
-  res.json([])
+  const products = await getProducts()
+  res.json(products)
 })
 
 export const products = router
