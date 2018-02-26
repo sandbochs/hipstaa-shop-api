@@ -11,7 +11,7 @@
     "test-only": "jest",
     "test:watch": "jest --watch",
     "build": "babel src/**/*.js -d dist",
-    "watch": "babel --watch src/**/*.js -d dist",
+    "watch": "nodemon --exec npm start -e js,sql",
     "start": "babel-node src/server",
     "premigrate": "pg-assert-schema -d postgres://postgres@localhost/hipstaa public",
     "migrate": "babel-node ./node_modules/.bin/db-migrate"
@@ -37,7 +37,8 @@
     "eslint-plugin-import": "^2.9.0",
     "flow-bin": "^0.66.0",
     "flow-typed": "^2.3.0",
-    "jest": "^22.4.2"
+    "jest": "^22.4.2",
+    "nodemon": "^1.15.1"
   },
   "dependencies": {
     "db-migrate": "^0.10.5",
