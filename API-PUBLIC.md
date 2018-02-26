@@ -3,15 +3,12 @@
 ### `GET` /v1/products
 Retreive a paginated list of products.
 
-#### Body
 Example
-``` json
-{
-  "max": 50
-}
+```
+GET /v1/products?max50
 ```
 
-| Property | Type | Nullable | Description |
+| Query Param| Type | Nullable | Description |
 |----------|------|----------|-------------|
 | start | integer | yes | The id of the first product to retreive |
 | max | integer | no | Number of products to retreive. The acceptable range is 1-100. |
@@ -41,6 +38,7 @@ Example
     "length": 4.4,
     "width": 8,
     "height": 5.5,
+    "weight": null,
     "volume": 24.3,
     "options": [{
       "id": 333,
