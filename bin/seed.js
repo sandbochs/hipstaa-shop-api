@@ -18,6 +18,7 @@ fs.readFile(seedFilePath, { encoding: 'utf-8' }, (error, file) => {
     console.log(error) // eslint-disable-line
   } else {
     seedDb(file)
+    console.log('Seeded DB')
   }
 })
 

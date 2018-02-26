@@ -50,7 +50,7 @@ INSERT INTO products (
 )
 VALUES (
   (SELECT id FROM manufacturers WHERE name = 'Patagonia'),
-  (SELECT id FROM categories WHERE name = 'Apparel Women''s'),
+  (SELECT id FROM categories WHERE name = 'Apparel - Women''s'),
   'Hybrid Jacket',
   jsonb_build_array('93% polyester/7% spandex stretch woven with fleece grid backer', '3-layer Polartec Windbloc stretch-woven polyester soft-shell with a DWR (durable water repellent) finish', 'Stretchy, breathable, double-weave soft-shell fabric on side panels, underarms and cuffs', 'High, harness- and pack-compatible handwarmer pockets and one interior chest pocket have brushed tricot lining')
 );
