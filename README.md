@@ -17,7 +17,7 @@
 - `npm run migrate up`
 - `npm start`
 - Point your browser to [http://localhost:3000/v1/products?max=100&start=1](http://localhost:3000/v1/products?max=100&start=1
-) or use Postman to make a GET request.
+) (or use Postman to make a GET request).
 
 ### Testing
 - `npx flow-typed install`
