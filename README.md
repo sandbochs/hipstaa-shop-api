@@ -1,6 +1,7 @@
 # hipstaa-shop-api
 
 ### [Public API Docs](https://github.com/sandbochs/hipstaa-shop-api/blob/master/API-PUBLIC.md)
+- Play with the api at this endpoint: `http://hipstaa.mooo.com/v1/`
 
 ### Dependencies
 
