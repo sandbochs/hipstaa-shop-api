@@ -7,6 +7,11 @@
   "plugins": [
     "flowtype"
   ],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
   "rules": {
     "semi": 0,
     "max-len": [
