@@ -1,0 +1,13 @@
+{
+  "dev": {
+    "driver": "pg",
+    "user": "postgres",
+    "host": "localhost",
+    "database": "hipstaa"
+  },
+  "dev-create": {
+    "driver": "pg",
+    "user": "postgres",
+    "host": "localhost"
+  }
+}
