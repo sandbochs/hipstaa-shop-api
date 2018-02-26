@@ -15,7 +15,7 @@ router.get('/', async (req: any, res: any, next: NextFunction): Promise<void> =>
     }
 
     const max = parseInt(req.query.max, 10)
-    if (max < 0 || max > 101) {
+    if (max < 1 || max > 100) {
       res.status(422).send('The max provided does not fall within the range of 1-100.')
       return
     }
@@ -32,7 +32,7 @@ router.get('/', async (req: any, res: any, next: NextFunction): Promise<void> =>
     }
 
     const products = await getProducts({ max, start })
-    res.json(products)
+    res.status(200).json(products)
   } catch (e) {
     next(e)
   }

@@ -11,3 +11,5 @@ app.use('/v1', v1)
 app.listen(port, () => {
   console.log(`Now listening on ${port}`) // eslint-disable-line
 })
+
+export default app
