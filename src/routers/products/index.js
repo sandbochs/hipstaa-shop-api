@@ -30,7 +30,7 @@ router.get('/', async (req: any, res: any, next: NextFuntion): Promise<void> => 
     }
   }
 
-  const products = await getProducts(req.query)
+  const products = await getProducts({ max, start })
   res.json(products)
 })
 
