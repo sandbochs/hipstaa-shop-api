@@ -5,7 +5,7 @@ Retreive a paginated list of products.
 
 Example
 ```
-GET /v1/products?max50
+GET /v1/products?max=50
 ```
 
 | Query Param| Type | Nullable | Description |
