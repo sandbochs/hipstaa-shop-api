@@ -14,7 +14,7 @@
     "watch": "babel --watch src/**/*.js -d dist",
     "start": "babel-node src/server",
     "premigrate": "pg-assert-schema -d postgres://postgres@localhost/hipstaa public",
-    "migrate": "db-migrate"
+    "migrate": "babel-node ./node_modules/.bin/db-migrate"
   },
   "repository": {
     "type": "git",
