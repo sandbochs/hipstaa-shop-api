@@ -29,7 +29,7 @@ JOIN categories
 ON products.category_id = categories.id
 JOIN product_options
 ON products.id = product_options.product_id
-WHERE products.id > $1
+WHERE products.id >= $1
 GROUP BY
   products.id,
   manufacturers.id,
