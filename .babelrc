@@ -10,10 +10,14 @@
     ]
   ],
   "plugins": [
+    "transform-flow-strip-types",
     [
       "module-resolver",
       {
-        "root": ["./src"]
+        "root": ["./src"],
+        "alias": {
+          "test": "./test"
+        }
       }
     ]
   ]
