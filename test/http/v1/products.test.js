@@ -33,7 +33,7 @@ describe('GET /v1/products', () => {
   })
 
   describe('Success', () => {
-    test(`handles a request without 'start' and with a max constraint`, async () => {
+    test('handles a request without \'start\' and with a max constraint', async () => {
       request(app)
         .get('/v1/products')
         .query({ max: 1 })
@@ -41,7 +41,7 @@ describe('GET /v1/products', () => {
         .then((res) => {
           const {
             next,
-            products
+            products,
           } = res.body
 
           expect(next).toBe(2)
@@ -58,7 +58,7 @@ describe('GET /v1/products', () => {
         .then((res) => {
           const {
             next,
-            products
+            products,
           } = res.body
 
           expect(next).toBe(undefined)
@@ -76,7 +76,7 @@ describe('GET /v1/products', () => {
         .then((res) => {
           const {
             next,
-            products
+            products,
           } = res.body
 
           expect(next).toBe(undefined)
